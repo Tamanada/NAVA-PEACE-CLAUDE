@@ -1,0 +1,313 @@
+import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+
+class CountryPickerWidget extends StatelessWidget {
+  final String? selectedCountry;
+  final ValueChanged<String> onCountrySelected;
+
+  const CountryPickerWidget({
+    super.key,
+    required this.selectedCountry,
+    required this.onCountrySelected,
+  });
+
+  static const List<String> _countries = [
+    'Afghanistan',
+    'Albania',
+    'Algeria',
+    'Andorra',
+    'Angola',
+    'Argentina',
+    'Armenia',
+    'Australia',
+    'Austria',
+    'Azerbaijan',
+    'Bahamas',
+    'Bahrain',
+    'Bangladesh',
+    'Barbados',
+    'Belarus',
+    'Belgium',
+    'Belize',
+    'Benin',
+    'Bhutan',
+    'Bolivia',
+    'Bosnia and Herzegovina',
+    'Botswana',
+    'Brazil',
+    'Brunei',
+    'Bulgaria',
+    'Burkina Faso',
+    'Burundi',
+    'Cambodia',
+    'Cameroon',
+    'Canada',
+    'Cape Verde',
+    'Central African Republic',
+    'Chad',
+    'Chile',
+    'China',
+    'Colombia',
+    'Comoros',
+    'Congo',
+    'Costa Rica',
+    'Croatia',
+    'Cuba',
+    'Cyprus',
+    'Czech Republic',
+    'Denmark',
+    'Djibouti',
+    'Dominica',
+    'Dominican Republic',
+    'East Timor',
+    'Ecuador',
+    'Egypt',
+    'El Salvador',
+    'Equatorial Guinea',
+    'Eritrea',
+    'Estonia',
+    'Ethiopia',
+    'Fiji',
+    'Finland',
+    'France',
+    'Gabon',
+    'Gambia',
+    'Georgia',
+    'Germany',
+    'Ghana',
+    'Greece',
+    'Grenada',
+    'Guatemala',
+    'Guinea',
+    'Guinea-Bissau',
+    'Guyana',
+    'Haiti',
+    'Honduras',
+    'Hungary',
+    'Iceland',
+    'India',
+    'Indonesia',
+    'Iran',
+    'Iraq',
+    'Ireland',
+    'Israel',
+    'Italy',
+    'Jamaica',
+    'Japan',
+    'Jordan',
+    'Kazakhstan',
+    'Kenya',
+    'Kiribati',
+    'North Korea',
+    'South Korea',
+    'Kuwait',
+    'Kyrgyzstan',
+    'Laos',
+    'Latvia',
+    'Lebanon',
+    'Lesotho',
+    'Liberia',
+    'Libya',
+    'Liechtenstein',
+    'Lithuania',
+    'Luxembourg',
+    'Macedonia',
+    'Madagascar',
+    'Malawi',
+    'Malaysia',
+    'Maldives',
+    'Mali',
+    'Malta',
+    'Marshall Islands',
+    'Mauritania',
+    'Mauritius',
+    'Mexico',
+    'Micronesia',
+    'Moldova',
+    'Monaco',
+    'Mongolia',
+    'Montenegro',
+    'Morocco',
+    'Mozambique',
+    'Myanmar',
+    'Namibia',
+    'Nauru',
+    'Nepal',
+    'Netherlands',
+    'New Zealand',
+    'Nicaragua',
+    'Niger',
+    'Nigeria',
+    'Norway',
+    'Oman',
+    'Pakistan',
+    'Palau',
+    'Panama',
+    'Papua New Guinea',
+    'Paraguay',
+    'Peru',
+    'Philippines',
+    'Poland',
+    'Portugal',
+    'Qatar',
+    'Romania',
+    'Russia',
+    'Rwanda',
+    'Saint Kitts and Nevis',
+    'Saint Lucia',
+    'Saint Vincent and the Grenadines',
+    'Samoa',
+    'San Marino',
+    'Sao Tome and Principe',
+    'Saudi Arabia',
+    'Senegal',
+    'Serbia',
+    'Seychelles',
+    'Sierra Leone',
+    'Singapore',
+    'Slovakia',
+    'Slovenia',
+    'Solomon Islands',
+    'Somalia',
+    'South Africa',
+    'South Sudan',
+    'Spain',
+    'Sri Lanka',
+    'Sudan',
+    'Suriname',
+    'Swaziland',
+    'Sweden',
+    'Switzerland',
+    'Syria',
+    'Taiwan',
+    'Tajikistan',
+    'Tanzania',
+    'Thailand',
+    'Togo',
+    'Tonga',
+    'Trinidad and Tobago',
+    'Tunisia',
+    'Turkey',
+    'Turkmenistan',
+    'Tuvalu',
+    'Uganda',
+    'Ukraine',
+    'United Arab Emirates',
+    'United Kingdom',
+    'United States',
+    'Uruguay',
+    'Uzbekistan',
+    'Vanuatu',
+    'Vatican City',
+    'Venezuela',
+    'Vietnam',
+    'Yemen',
+    'Zambia',
+    'Zimbabwe',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => _showCountryPicker(context),
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 2.h),
+        decoration: BoxDecoration(
+          color: const Color(0xFFF7F7F1),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              selectedCountry ?? 'Select your country',
+              style: TextStyle(
+                fontSize: 14.sp,
+                color: selectedCountry != null ? Colors.black87 : Colors.grey,
+              ),
+            ),
+            const Icon(Icons.arrow_drop_down, color: Color(0xFF91A13F)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showCountryPicker(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => DraggableScrollableSheet(
+        initialChildSize: 0.7,
+        minChildSize: 0.5,
+        maxChildSize: 0.9,
+        builder: (context, scrollController) => Container(
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          ),
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(3.w),
+                decoration: const BoxDecoration(
+                  border: Border(bottom: BorderSide(color: Color(0xFFF7F7F1))),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Select Country',
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.bold,
+                        color: const Color(0xFF91A13F),
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () => Navigator.pop(context),
+                      icon: const Icon(Icons.close),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  controller: scrollController,
+                  itemCount: _countries.length,
+                  itemBuilder: (context, index) {
+                    final country = _countries[index];
+                    final isSelected = selectedCountry == country;
+
+                    return ListTile(
+                      title: Text(
+                        country,
+                        style: TextStyle(
+                          color: isSelected
+                              ? const Color(0xFF91A13F)
+                              : Colors.black87,
+                          fontWeight: isSelected
+                              ? FontWeight.bold
+                              : FontWeight.normal,
+                        ),
+                      ),
+                      trailing: isSelected
+                          ? const Icon(Icons.check, color: Color(0xFF91A13F))
+                          : null,
+                      onTap: () {
+                        onCountrySelected(country);
+                        Navigator.pop(context);
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
