@@ -46,3 +46,10 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 android/app/.cxx
+
+# Keystore & secrets (NEVER commit)
+android/key.properties
+android/*.jks
+android/*.keystore
+download_gradle.ps1
+.env
