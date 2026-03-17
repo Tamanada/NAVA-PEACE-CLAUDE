@@ -284,7 +284,7 @@ html[dir="rtl"] .lang-dropdown {
    GLOBAL SECTION STYLES
    ============================================ */
 section {
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -299,7 +299,7 @@ section {
   color: var(--white);
   text-align: center;
   letter-spacing: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
   line-height: 1.4;
 }
@@ -423,45 +423,47 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  gap: 6px;
   width: 100%;
-  padding-top: 5vh;
+  margin-top: -8vh;
 }
 
 .hero-dove-splash {
-  width: min(150px, 20vh);
+  width: min(240px, 32vh);
   height: auto;
-  filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0 0 60px rgba(255, 255, 255, 0.6));
   animation: float 4s ease-in-out infinite;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .hero-label {
   font-family: var(--font-title);
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.55);
-  letter-spacing: 12px;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 14px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero-title {
   font-family: var(--font-title);
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-size: clamp(2.4rem, 8vw, 4.5rem);
   color: var(--white);
   text-align: center;
-  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
-  letter-spacing: 6px;
-  line-height: 1.2;
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+  letter-spacing: 8px;
+  line-height: 1.15;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .hero-divider {
-  width: 50px;
+  width: 60px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 1px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 /* ======== Floating Language Banner (fixed, auto-hides) ======== */
@@ -563,7 +565,7 @@ section {
 .section-video {
   background: radial-gradient(ellipse at 50% 0%,
     var(--primary) 0%, var(--deep-blue) 100%);
-  padding: 0 20px 60px;
+  padding: 0 20px 40px;
 }
 
 .video-wrapper {
@@ -587,15 +589,15 @@ section {
 .section-today {
   background: radial-gradient(ellipse at 50% 30%,
     var(--sky-start) 0%, var(--primary) 50%, var(--deep-blue) 100%);
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
 
 .dove-circle {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .dove-circle-img {
-  width: 180px;
+  width: 140px;
   height: auto;
   filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.4));
   animation: float 4s ease-in-out infinite;
@@ -608,7 +610,7 @@ section {
   line-height: 1.2;
   letter-spacing: 5px;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .subtitle-today {
@@ -623,10 +625,10 @@ section {
 /* WHY / HOW / WHAT Bubbles */
 .why-how-what {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 0 30px;
+  margin: 24px 0 16px;
 }
 
 .bubble-card {
@@ -667,7 +669,7 @@ section {
 .section-first {
   background: radial-gradient(ellipse at 50% 30%,
     var(--primary) 0%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .card-label {
@@ -832,7 +834,7 @@ section {
   background: radial-gradient(ellipse at 50% 30%, var(--primary) 0%, var(--deep-blue) 100%);
   display: flex;
   justify-content: center;
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .profile-header { margin-bottom: 20px; }
@@ -891,7 +893,7 @@ section {
 .section-five-phones {
   background: radial-gradient(ellipse at 50% 50%,
     var(--primary) 0%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .five-phones {
@@ -899,7 +901,7 @@ section {
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -1026,7 +1028,7 @@ section {
   border-radius: 40px;
   padding: 28px 44px;
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 24px;
   text-align: center;
   backdrop-filter: blur(var(--glass-blur));
 }
@@ -1139,7 +1141,7 @@ section {
 .section-community {
   background: radial-gradient(ellipse at 50% 50%,
     var(--sky-start) 0%, var(--primary) 50%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .community-card {
@@ -1247,7 +1249,7 @@ section {
 .section-blockchain {
   background: radial-gradient(ellipse at 50% 30%,
     var(--primary) 0%, var(--deep-blue) 80%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .blockchain-img-wrapper {
@@ -1296,7 +1298,7 @@ section {
 .section-foundation {
   background: radial-gradient(ellipse at 50% 30%,
     var(--sky-start) 0%, var(--primary) 50%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .foundation-circle {
@@ -1346,7 +1348,7 @@ section {
 .section-howtoplay {
   background: radial-gradient(ellipse at 50% 20%,
     var(--sky-start) 0%, var(--primary) 40%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .info-card {
@@ -1444,7 +1446,7 @@ section {
 .section-roadmap {
   background: linear-gradient(180deg,
     var(--deep-blue) 0%, #0d4f7a 50%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .roadmap-phase {
@@ -1473,7 +1475,7 @@ section {
 .section-founder {
   background: radial-gradient(ellipse at 50% 50%,
     var(--primary) 0%, var(--deep-blue) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .founder-grid {
@@ -1598,18 +1600,18 @@ section {
   }
 
   .hero-dove-splash {
-    width: 160px;
+    width: min(200px, 28vh);
   }
 
   .hero-title {
-    font-size: clamp(1.6rem, 7vw, 2.2rem);
-    letter-spacing: 3px;
+    font-size: clamp(2rem, 9vw, 3rem);
+    letter-spacing: 4px;
     padding: 0 15px;
   }
 
   .hero-label {
-    font-size: 0.9rem;
-    letter-spacing: 8px;
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    letter-spacing: 10px;
   }
 
   .five-phones { gap: 8px; flex-wrap: wrap; }
