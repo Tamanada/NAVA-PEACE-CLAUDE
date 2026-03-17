@@ -43,7 +43,7 @@
   "app.phone3_text": "愿这次探索让你充满光明、爱、欢乐、和平。",
   "app.phone4": "理解冲突<br/>是通往和平的第一步。",
   "app.phone5": "和平地图<br/>观看和平成长。",
-  "app.quote": "\"<em>对人类而言</em>一个简单的应用，<br/><em>对和平而言</em>一个巨大的飞跃\"",
+  "app.quote": "<span class=\"quote-line1\">\"对人类而言一个简单的应用，</span><br/><span class=\"quote-line2\">对<em>和平</em>而言一个巨大的飞跃\"</span>",
   "app.desc_title": "NAVA PEACE 应用",
   "app.desc_p1": "在运动的核心：简单、有意义，专为大规模参与而设计，它建立在 <strong>Web3</strong> 技术之上，以获得更快的速度、安全性和透明的生态系统。",
   "app.desc_p2": "它将是我们未来 180 天的游乐场，所有行动对每个人都是开放的：",

@@ -43,7 +43,7 @@
   "app.phone3_text": "Que esta búsqueda te llene de luz, amor, alegría y paz.",
   "app.phone4": "Comprender el conflicto<br/>es el primer paso hacia la paz.",
   "app.phone5": "MAPA DE PAZ<br/>Observa cómo crece la paz.",
-  "app.quote": "\"UNA SIMPLE APP <em>PARA EL HOMBRE</em>,<br/>UN GRAN SALTO <em>PARA LA PAZ</em>\"",
+  "app.quote": "<span class=\"quote-line1\">\"UNA SIMPLE APP PARA EL HOMBRE,</span><br/><span class=\"quote-line2\">UN GRAN SALTO PARA LA <em>PAZ</em>\"</span>",
   "app.desc_title": "La app NAVA PEACE",
   "app.desc_p1": "En el corazón del movimiento: sencilla, significativa y diseñada para la participación masiva, está construida sobre tecnología <strong>Web3</strong> para mayor velocidad, seguridad y un ecosistema transparente.",
   "app.desc_p2": "Será nuestro campo de juego durante los próximos 180 días, y las acciones son accesibles para todos:",

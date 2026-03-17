@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNav();
   initJoinForm();
   initLangBanner();
+  initVideoSound();
   I18N.init();
 });
 
@@ -23,6 +24,43 @@ function initLangBanner() {
   setTimeout(() => {
     banner.classList.add('hidden');
   }, 8000);
+}
+
+/* ---------- Video Sound (autoplay with sound, fallback to muted) ---------- */
+function initVideoSound() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  // Try to play with sound
+  video.muted = false;
+  const playPromise = video.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // Browser blocked unmuted autoplay — fallback to muted
+      video.muted = true;
+      video.play();
+    });
+  }
+
+  // Add sound toggle button
+  const wrapper = video.closest('.video-wrapper');
+  if (!wrapper) return;
+
+  const btn = document.createElement('button');
+  btn.className = 'video-sound-btn';
+  btn.innerHTML = video.muted ? '🔇' : '🔊';
+  btn.setAttribute('aria-label', 'Toggle sound');
+  wrapper.appendChild(btn);
+
+  btn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    btn.innerHTML = video.muted ? '🔇' : '🔊';
+  });
+
+  // Update button if muted state changes
+  video.addEventListener('volumechange', () => {
+    btn.innerHTML = video.muted ? '🔇' : '🔊';
+  });
 }
 
 /* ---- NAVBAR ---- */
