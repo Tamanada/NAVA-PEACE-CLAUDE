@@ -1,0 +1,3 @@
+[submodule "preview"]
+	url = https://github.com/Tamanada/navapeace-web.git
+	path = preview

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build/web",
+    "public": "preview",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,16 +9,16 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/splash.html"
       }
     ],
     "headers": [
       {
-        "source": "**/*.@(js|css|wasm)",
+        "source": "**/*.@(js|css|wasm|html)",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=31536000"
+            "value": "no-cache, no-store, must-revalidate"
           }
         ]
       }
