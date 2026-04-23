@@ -459,6 +459,7 @@
 
   "nav.game2economy": "Del Juego a la Economía",
   "nav.community": "Comunidad",
+  "nav.merch": "Tienda",
   "game2economy.heading": "DEL JUEGO<br/>A LA ECONOMÍA",
   "game2economy.sub": "Cómo un gesto diario se convierte en una economía global de la paz.",
   "game2economy.step1_title": "TÚ JUEGAS",
@@ -470,5 +471,14 @@
   "game2economy.why_token_title": "¿Por qué tokenizar la paz?",
   "game2economy.why_token": "Un token es una unidad digital de valor, como una moneda en un videojuego — excepto que esta es real. Cuando juegas a NAVA PEACE, tu acción diaria crea tokens en la blockchain. Estos tokens pueden intercambiarse, ahorrarse o usarse para apoyar causas humanitarias. Tokenizar la paz significa dar a tu compromiso un valor medible, intercambiable y transparente. Por primera vez, la paz tiene una economía.",
   "game2economy.quote": "\"Si la guerra es un mercado, entonces la paz debe convertirse en una fuerza económica.\"",
-  "game2economy.summary": "La gamificación no es un truco — es el motor. Al convertir la paz en una práctica diaria, creamos el impulso colectivo necesario para construir una economía de paz real y tokenizada, respaldada por la transparencia de la blockchain."
+  "game2economy.summary": "La gamificación no es un truco — es el motor. Al convertir la paz en una práctica diaria, creamos el impulso colectivo necesario para construir una economía de paz real y tokenizada, respaldada por la transparencia de la blockchain.",
+
+  "merch.heading": "Lleva la Paz",
+  "merch.tagline": "Cada artículo financia la misión.",
+  "merch.description": "Nuestra ropa y accesorios no son simples productos — son declaraciones. Cada compra apoya directamente la misión de NAVA PEACE y financia ayuda humanitaria en todo el mundo.",
+  "merch.badge1": "Envío mundial",
+  "merch.badge2": "Materiales éticos",
+  "merch.badge3": "Cada compra dona",
+  "merch.cta": "Comprar ahora",
+  "merch.available": "Disponible en"
 }

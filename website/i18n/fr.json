@@ -459,6 +459,7 @@
 
   "nav.game2economy": "Du Jeu à l'Économie",
   "nav.community": "Communauté",
+  "nav.merch": "Boutique",
   "game2economy.heading": "DU JEU<br/>À L'ÉCONOMIE",
   "game2economy.sub": "Comment un geste quotidien devient une économie mondiale de la paix.",
   "game2economy.step1_title": "VOUS JOUEZ",
@@ -470,5 +471,14 @@
   "game2economy.why_token_title": "Pourquoi tokeniser la paix ?",
   "game2economy.why_token": "Un token est une unité de valeur numérique, comme une pièce dans un jeu vidéo — sauf que celle-ci est réelle. Lorsque vous jouez à NAVA PEACE, votre action quotidienne crée des tokens sur la blockchain. Ces tokens peuvent être échangés, épargnés ou utilisés pour soutenir des causes humanitaires. Tokeniser la paix signifie donner à votre engagement une valeur mesurable, échangeable et transparente. Pour la première fois, la paix a une économie.",
   "game2economy.quote": "\"Si la guerre est un marché, alors la paix doit devenir une force économique.\"",
-  "game2economy.summary": "La gamification n'est pas un gadget — c'est le moteur. En transformant la paix en pratique quotidienne, nous créons l'élan collectif nécessaire pour construire une véritable économie de la paix tokenisée, soutenue par la transparence de la blockchain."
+  "game2economy.summary": "La gamification n'est pas un gadget — c'est le moteur. En transformant la paix en pratique quotidienne, nous créons l'élan collectif nécessaire pour construire une véritable économie de la paix tokenisée, soutenue par la transparence de la blockchain.",
+
+  "merch.heading": "Portez la Paix",
+  "merch.tagline": "Chaque article finance la mission.",
+  "merch.description": "Nos vêtements et accessoires ne sont pas de simples produits — ce sont des déclarations. Chaque achat soutient directement la mission de NAVA PEACE et finance l'aide humanitaire à travers le monde.",
+  "merch.badge1": "Livraison mondiale",
+  "merch.badge2": "Matières éthiques",
+  "merch.badge3": "Chaque achat fait un don",
+  "merch.cta": "Acheter maintenant",
+  "merch.available": "Disponible sur"
 }

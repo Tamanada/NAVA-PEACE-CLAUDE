@@ -459,6 +459,7 @@
 
   "nav.game2economy": "从游戏到经济",
   "nav.community": "社区",
+  "nav.merch": "商店",
   "game2economy.heading": "从游戏<br/>到经济",
   "game2economy.sub": "一个日常手势如何成为全球和平经济。",
   "game2economy.step1_title": "你参与",
@@ -470,5 +471,14 @@
   "game2economy.why_token_title": "为什么要将和平代币化？",
   "game2economy.why_token": "代币是一种数字价值单位，就像电子游戏中的金币——只不过这个是真实的。当你玩 NAVA PEACE 时，你的日常行动在区块链上创建代币。这些代币可以交换、储蓄或用于支持人道主义事业。将和平代币化意味着赋予你的承诺一种可衡量的、可交易的和透明的价值。和平第一次拥有了自己的经济。",
   "game2economy.quote": "\"如果战争是一个市场，那么和平必须成为一种经济力量。\"",
-  "game2economy.summary": "游戏化不是噱头——它是引擎。通过将和平变成每日实践，我们创造了建设一个由区块链透明度支持的真实、代币化和平经济所需的集体动力。"
+  "game2economy.summary": "游戏化不是噱头——它是引擎。通过将和平变成每日实践，我们创造了建设一个由区块链透明度支持的真实、代币化和平经济所需的集体动力。",
+
+  "merch.heading": "穿上和平",
+  "merch.tagline": "每件商品都资助使命。",
+  "merch.description": "我们的服装和配饰不仅仅是产品——它们是宣言。每次购买都直接支持 NAVA PEACE 的使命，并资助全球的人道主义援助。",
+  "merch.badge1": "全球配送",
+  "merch.badge2": "道德材料",
+  "merch.badge3": "每次购买都捐款",
+  "merch.cta": "立即购买",
+  "merch.available": "可在以下平台购买"
 }

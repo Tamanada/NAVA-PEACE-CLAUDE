@@ -459,6 +459,7 @@
 
   "nav.game2economy": "Vom Spiel zur Wirtschaft",
   "nav.community": "Gemeinschaft",
+  "nav.merch": "Shop",
   "game2economy.heading": "VOM SPIEL<br/>ZUR WIRTSCHAFT",
   "game2economy.sub": "Wie eine tägliche Geste zu einer globalen Friedenswirtschaft wird.",
   "game2economy.step1_title": "DU SPIELST",
@@ -470,5 +471,14 @@
   "game2economy.why_token_title": "Warum Frieden tokenisieren?",
   "game2economy.why_token": "Ein Token ist eine digitale Werteinheit, wie eine Münze in einem Videospiel — außer dass diese real ist. Wenn du NAVA PEACE spielst, erzeugt deine tägliche Aktion Token auf der Blockchain. Diese Token können getauscht, gespart oder zur Unterstützung humanitärer Anliegen verwendet werden. Frieden zu tokenisieren bedeutet, deinem Engagement einen messbaren, handelbaren und transparenten Wert zu geben. Zum ersten Mal hat Frieden eine Wirtschaft.",
   "game2economy.quote": "\"Wenn Krieg ein Markt ist, dann muss Frieden zu einer wirtschaftlichen Kraft werden.\"",
-  "game2economy.summary": "Gamification ist kein Gimmick — es ist der Motor. Indem wir Frieden in eine tägliche Praxis verwandeln, schaffen wir den kollektiven Schwung, der nötig ist, um eine echte, tokenisierte Friedenswirtschaft aufzubauen, gestützt durch Blockchain-Transparenz."
+  "game2economy.summary": "Gamification ist kein Gimmick — es ist der Motor. Indem wir Frieden in eine tägliche Praxis verwandeln, schaffen wir den kollektiven Schwung, der nötig ist, um eine echte, tokenisierte Friedenswirtschaft aufzubauen, gestützt durch Blockchain-Transparenz.",
+
+  "merch.heading": "Trage den Frieden",
+  "merch.tagline": "Jeder Artikel finanziert die Mission.",
+  "merch.description": "Unsere Kleidung und Accessoires sind keine einfachen Produkte — sie sind Aussagen. Jeder Kauf unterstützt direkt die Mission von NAVA PEACE und finanziert humanitäre Hilfe auf der ganzen Welt.",
+  "merch.badge1": "Weltweiter Versand",
+  "merch.badge2": "Ethische Materialien",
+  "merch.badge3": "Jeder Kauf spendet",
+  "merch.cta": "Jetzt kaufen",
+  "merch.available": "Erhältlich bei"
 }

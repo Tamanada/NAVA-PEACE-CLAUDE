@@ -459,6 +459,7 @@
 
   "nav.game2economy": "Game to Economy",
   "nav.community": "Community",
+  "nav.merch": "Merch",
   "game2economy.heading": "FROM GAME<br/>TO ECONOMY",
   "game2economy.sub": "How a daily gesture becomes a global peace economy.",
   "game2economy.step1_title": "YOU PLAY",
@@ -470,5 +471,14 @@
   "game2economy.why_token_title": "Why tokenize peace?",
   "game2economy.why_token": "A token is a digital unit of value, like a coin in a video game — except this one is real. When you play NAVA PEACE, your daily action creates tokens on the blockchain. These tokens can be exchanged, saved, or used to support humanitarian causes. Tokenizing peace means giving your commitment a measurable, tradable, and transparent value. For the first time, peace has an economy.",
   "game2economy.quote": "\"If war is a market, then peace must become an economic force.\"",
-  "game2economy.summary": "Gamification is not a gimmick — it's the engine. By turning peace into a daily practice, we create the collective momentum needed to build a real, tokenized peace economy backed by blockchain transparency."
+  "game2economy.summary": "Gamification is not a gimmick — it's the engine. By turning peace into a daily practice, we create the collective momentum needed to build a real, tokenized peace economy backed by blockchain transparency.",
+
+  "merch.heading": "NAVA PEACE MERCH",
+  "merch.tagline": "WEAR THE PEACE",
+  "merch.description": "Limited-edition apparel & accessories — every purchase directly supports the NAVA PEACE Foundation and the global peace movement.",
+  "merch.badge1": "Print-on-Demand",
+  "merch.badge2": "Ships Worldwide",
+  "merch.badge3": "Supports the Foundation",
+  "merch.cta": "SHOP IN APP",
+  "merch.available": "Available exclusively in the Telegram app"
 }
