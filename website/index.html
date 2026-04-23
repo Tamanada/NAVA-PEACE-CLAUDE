@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NAVA PEACE WORLD 2026</title>
   <meta name="description" content="NAVA PEACE WORLD 2026 — Today, Humanity Chooses Peace." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -25,12 +29,13 @@
       <li><a href="#today" data-i18n="nav.today">Today</a></li>
       <li><a href="#first" data-i18n="nav.mission">Mission</a></li>
       <li><a href="#app" data-i18n="nav.app">The App</a></li>
-      <li><a href="#vision" data-i18n="nav.vision">Vision</a></li>
-      <li><a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a></li>
-      <li><a href="#blockchain" data-i18n="nav.blockchain">Blockchain</a></li>
+      <li><a href="#game2economy" data-i18n="nav.game2economy">Game to Economy</a></li>
       <li><a href="#foundation" data-i18n="nav.foundation">Foundation</a></li>
+      <li><a href="#community" data-i18n="nav.community">Community</a></li>
       <li><a href="#howtoplay" data-i18n="nav.howtoplay">How to Play</a></li>
+      <li><a href="#blockchain" data-i18n="nav.blockchain">Blockchain</a></li>
       <li><a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a></li>
+      <li><a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a></li>
       <li><a href="#founder" data-i18n="nav.founder">Founder</a></li>
     </ul>
   </nav>
@@ -43,6 +48,17 @@
       <p class="hero-label" data-i18n="hero.label">NAVA PEACE</p>
       <h1 class="hero-title" data-i18n="hero.title">BORN TO GROW</h1>
       <div class="hero-divider"></div>
+      <div class="hero-slogan">
+        <span class="slogan-line slogan-line--1" data-i18n="hero.slogan1">LET'S MAKE</span>
+        <span class="slogan-line slogan-line--peace" data-i18n="hero.slogan2">PEACE</span>
+        <span class="slogan-line slogan-line--3" data-i18n="hero.slogan3">GREAT AGAIN</span>
+      </div>
+    </div>
+    <div class="hero-cta-bottom">
+      <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" class="cta-download" data-i18n="cta.download">
+        <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+        JOIN NAVA PEACE
+      </a>
     </div>
   </section>
 
@@ -87,7 +103,7 @@
   <section class="section-video">
     <div class="container">
       <div class="video-wrapper animate-on-scroll">
-        <video autoplay loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline preload="metadata" controls class="hero-video">
           <source src="assets/nava-peace-video.mp4" type="video/mp4" />
         </video>
       </div>
@@ -98,7 +114,7 @@
   <section class="section-today" id="today">
     <div class="container">
       <div class="dove-circle animate-on-scroll">
-        <img src="assets/dove-logo.png" alt="Peace Dove" class="dove-circle-img" />
+        <img src="assets/dove-logo.png" alt="Peace Dove" class="dove-circle-img" loading="lazy" />
       </div>
       <h2 class="title-today animate-on-scroll" data-i18n="today.heading" data-i18n-html>TODAY<br/>HUMANITY<br/>CHOOSES PEACE</h2>
       <p class="subtitle-today animate-on-scroll">
@@ -108,21 +124,27 @@
       <!-- WHY / HOW / WHAT Bubbles -->
       <div class="why-how-what animate-on-scroll">
         <div class="bubble-card">
-          <h3 data-i18n="today.why">WHY</h3>
-          <p data-i18n="today.why_text" data-i18n-html>BECAUSE PEOPLE<br/>PEACE NEEDS US.</p>
+          <h3 data-i18n="today.why">WHY SHOULD WE ACT?</h3>
+          <p data-i18n="today.why_text">Peace is fragile. We believe it must be made visible and practiced daily by everyone.</p>
         </div>
         <div class="bubble-card">
-          <h3 data-i18n="today.how">HOW</h3>
-          <p data-i18n="today.how_text">BY GAMING OUR COLLECTIVE WILL FOR WORLD PEACE.</p>
+          <h3 data-i18n="today.how">HOW DO WE PARTICIPATE?</h3>
+          <p data-i18n="today.how_text">We created a global system that turns simple daily actions into a visible, connected movement.</p>
         </div>
         <div class="bubble-card">
-          <h3 data-i18n="today.what">WHAT</h3>
-          <p data-i18n="today.what_text">AN APP TO UNITE, PLAY &amp; INSPIRE PEOPLE THEN IN WORLD PEACE.</p>
+          <h3 data-i18n="today.what">WHAT SOLUTION DO WE OFFER?</h3>
+          <p data-i18n="today.what_text">A platform, a community, and a technology that allow anyone to join and spread peace worldwide.</p>
         </div>
       </div>
 
+      <div class="text-center animate-on-scroll" style="margin-top:20px;">
+        <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" class="cta-download" data-i18n="cta.download">
+          JOIN NAVA PEACE
+        </a>
+      </div>
+
       <!-- Dove row -->
-      <div class="doves-row animate-on-scroll">&#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A;</div>
+      <div class="doves-row animate-on-scroll">&#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A; &#x1F54A;</div>
     </div>
   </section>
 
@@ -131,10 +153,10 @@
     <div class="container">
       <div class="card-white animate-on-scroll">
         <div class="card-label">
-          <img src="assets/dove-logo.png" alt="Peace Dove" style="width:80px;height:auto;" />
+          <img src="assets/dove-logo.png" alt="Peace Dove" class="dove-circle-img" loading="lazy" />
         </div>
         <h2 class="bicolor-title">
-          <span class="pink-txt" data-i18n="first.heading" data-i18n-html>NAVA PEACE IS THE WORLD'S FIRST<br/>TECHNOLOGICAL TOOL DESIGNED TO <u>MAKE PEACE</u><br/>VISIBLE <em>FOR THE FIRST TIME IN HUMAN HISTORY</em></span>
+          <span class="pink-txt" data-i18n="first.heading" data-i18n-html>NAVA PEACE IS THE WORLD'S FIRST TECHNOLOGICAL TOOL DESIGNED TO <strong>MAKE PEACE</strong> VISIBLE <em>FOR THE FIRST TIME IN HUMAN HISTORY</em></span>
         </h2>
         <p class="blue-txt" style="text-align:center;font-weight:700;margin-bottom:16px;" data-i18n="first.by">BY:</p>
         <div class="reading-window">
@@ -206,15 +228,97 @@
           </div>
         </div>
       </div>
+      <div class="cta-wrapper animate-on-scroll">
+        <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" class="cta-download" data-i18n="cta.join">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          JOIN THE MOVEMENT
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ======== VISION ======== -->
-  <section class="section-vision" id="vision">
+  <!-- ======== FROM GAME TO ECONOMY ======== -->
+  <section class="section-game2economy" id="game2economy">
     <div class="container">
-      <h2 class="vision-title animate-on-scroll" data-i18n="vision.heading" data-i18n-html>OUR VISION FOR<br/>NAVA PEACE</h2>
-      <div class="card-light vision-card animate-on-scroll">
-        <p data-i18n="vision.text" data-i18n-html>NAVA PEACE aims to become the first global <strong>WEB3 ecosystem</strong> entirely built around <strong>peace, dignity</strong> and <strong>solidarity</strong>.</p>
+      <h2 class="section-heading animate-on-scroll" data-i18n="game2economy.heading" data-i18n-html>FROM GAME<br/>TO ECONOMY</h2>
+      <p class="section-subheading animate-on-scroll" data-i18n="game2economy.sub">How a daily gesture becomes a global peace economy.</p>
+
+      <div class="game2economy-steps animate-on-scroll">
+        <div class="g2e-step">
+          <div class="g2e-number">1</div>
+          <h3 data-i18n="game2economy.step1_title">YOU PLAY</h3>
+          <p data-i18n="game2economy.step1_text">Every day, you open the app and click "I choose peace." This simple gesture is your daily commitment — and it mines NAVA tokens.</p>
+        </div>
+        <div class="g2e-arrow">&#x2192;</div>
+        <div class="g2e-step">
+          <div class="g2e-number">2</div>
+          <h3 data-i18n="game2economy.step2_title">TOKENS ARE CREATED</h3>
+          <p data-i18n="game2economy.step2_text">Your action is recorded on the blockchain. Each click generates tokens — a real digital currency, not just points. The more you play, the more you earn.</p>
+        </div>
+        <div class="g2e-arrow">&#x2192;</div>
+        <div class="g2e-step">
+          <div class="g2e-number">3</div>
+          <h3 data-i18n="game2economy.step3_title">THE ECONOMY GROWS</h3>
+          <p data-i18n="game2economy.step3_text">Millions of players create a massive token ecosystem. 50% funds the Foundation for humanitarian aid. The rest powers a new economy — the first economy of peace.</p>
+        </div>
+      </div>
+
+      <div class="card-light animate-on-scroll" style="margin-top:20px;">
+        <h3 style="text-align:center;color:var(--white);margin-bottom:12px;" data-i18n="game2economy.why_token_title">Why tokenize peace?</h3>
+        <p data-i18n="game2economy.why_token">A token is a digital unit of value, like a coin in a video game — except this one is real. When you play NAVA PEACE, your daily action creates tokens on the blockchain. These tokens can be exchanged, saved, or used to support humanitarian causes. Tokenizing peace means giving your commitment a measurable, tradable, and transparent value. For the first time, peace has an economy.</p>
+        <blockquote class="quote-block" data-i18n="game2economy.quote">"If war is a market, then peace must become an economic force."</blockquote>
+        <p style="text-align:center;" data-i18n="game2economy.summary">Gamification is not a gimmick — it's the engine. By turning peace into a daily practice, we create the collective momentum needed to build a real, tokenized peace economy backed by blockchain transparency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOUNDATION ======== -->
+  <section class="section-foundation" id="foundation">
+    <div class="container">
+      <h2 class="section-heading animate-on-scroll" data-i18n="foundation.heading" data-i18n-html>NAVA PEACE<br/>FOUNDATION</h2>
+      <p class="section-subheading animate-on-scroll" data-i18n="foundation.subheading">A transparent and action-oriented foundation that supports victims of war and funds peace initiatives.</p>
+
+      <div class="foundation-circle animate-on-scroll">
+        <div class="foundation-dove">
+          <img src="assets/dove-logo.png" alt="Peace Dove" class="foundation-dove-img" loading="lazy" />
+        </div>
+        <div class="foundation-pillar">
+          <h3 data-i18n="foundation.h_humanitarian">Humanitarian Support</h3>
+          <p data-i18n="foundation.p_humanitarian">Medical aid, food aid, water treatment, prosthetics, psychological support.</p>
+        </div>
+        <div class="foundation-pillar">
+          <h3 data-i18n="foundation.h_peace">Peace Projects</h3>
+          <p data-i18n="foundation.p_peace">Education, reconciliation, cultural exchange.</p>
+        </div>
+        <div class="foundation-pillar">
+          <h3 data-i18n="foundation.h_reconstruction">Reconstruction</h3>
+          <p data-i18n="foundation.p_reconstruction">Homes, hearts, souls, hope for all, everywhere, using the rubble to build new structures.</p>
+        </div>
+        <div class="foundation-pillar">
+          <h3 data-i18n="foundation.h_transparency">Radical Transparency</h3>
+          <p data-i18n="foundation.p_transparency">Thanks to blockchain technology, every NAVA PEACE token spent will be publicly accountable.</p>
+        </div>
+      </div>
+
+      <div class="card-white animate-on-scroll" style="margin-top:20px;">
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="foundation.p1" data-i18n-html>50% of the tokens issued will be managed by <strong>the NAVA PEACE Foundation for Peace</strong>, administered by a board of directors composed of honorary and elected members.</p>
+            <p data-i18n="foundation.p2"><strong>The foundation's missions include:</strong></p>
+            <ul class="app-features">
+              <li data-i18n="foundation.li1">emergency food aid</li>
+              <li data-i18n="foundation.li2">housing reconstruction</li>
+              <li data-i18n="foundation.li3">eco-construction training</li>
+              <li data-i18n="foundation.li4">permaculture training</li>
+              <li data-i18n="foundation.li5">installation of clean water systems</li>
+              <li data-i18n="foundation.li6">training and installation of green energy systems</li>
+              <li data-i18n="foundation.li7">3D printing of prosthetics and essential items</li>
+              <li data-i18n="foundation.li8">a global fleet of volunteers ready to respond</li>
+              <li data-i18n="foundation.li9">floating farms and much more...</li>
+            </ul>
+            <p data-i18n="foundation.p3"><strong>A global rapid response network will be deployed to provide immediate assistance to crisis zones.</strong></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -253,87 +357,279 @@
     </div>
   </section>
 
-  <!-- ======== PHILOSOPHICAL MANIFESTO ======== -->
-  <section class="section-manifesto" id="manifesto">
+  <!-- ======== HOW TO PLAY ======== -->
+  <section class="section-howtoplay" id="howtoplay">
     <div class="container">
-      <h2 class="manifesto-title animate-on-scroll" data-i18n="manifesto.heading" data-i18n-html>PHILOSOPHICAL<br/>MANIFESTO</h2>
-      <p class="manifesto-hearts animate-on-scroll">&#x1F499; &#x1F49C; &#x1F49B;</p>
+      <h2 class="section-heading animate-on-scroll" data-i18n="howtoplay.heading">EVERYTHING YOU NEED TO KNOW.</h2>
+      <p class="section-subheading animate-on-scroll" data-i18n="howtoplay.sub1">How to play? How to Improve?</p>
+      <p class="section-subheading animate-on-scroll" style="color:rgba(255,255,255,0.95);" data-i18n="howtoplay.sub2"><strong>How to win? And most importantly... why?</strong></p>
 
-      <div class="card-manifesto animate-on-scroll">
-        <div class="reading-window reading-window-dark reading-window-lg">
+      <div class="card-light animate-on-scroll">
+        <p style="text-align:center;color:var(--white);" data-i18n="howtoplay.intro_title">A brief introduction:</p>
+        <div class="reading-window reading-window-dark">
           <div class="reading-window-inner">
-            <blockquote class="manifesto-quote" data-i18n="manifesto.quote1" data-i18n-html>"Every day, humanity has a choice.<br/>Today, we choose peace."</blockquote>
-
-            <p data-i18n="manifesto.p1">There is a moment, invisible yet decisive, when a civilization chooses what it wants to become. This moment is neither political, nor religious, nor economic. It is internal, silent, individual.</p>
-
-            <p data-i18n="manifesto.p2">It is made of a gesture, an intention, a choice. This gesture is peace. And this choice belongs to us. NAVA PEACE is the global framework that transforms this intimate choice into a visible, measurable, and powerful force.</p>
-
-            <p data-i18n="manifesto.p3"><strong>NAVA PEACE is born from a simple and profound conviction:</strong></p>
-
-            <ul class="manifesto-list">
-              <li data-i18n="manifesto.li1"><strong>Peace is not an event. It is a practice.</strong></li>
-              <li data-i18n="manifesto.li2"><strong>And it begins within each of us.</strong></li>
-            </ul>
-
-            <p data-i18n="manifesto.p4">It depends neither on governments, nor treaties, <em>nor</em> the powerful, but on the quiet strength of ordinary hearts that choose not to give in to fear or hatred.</p>
-
-            <p data-i18n="manifesto.p5" data-i18n-html>Every time a human being clicks the button, "Today, I commit to peace, for everyone, everywhere in the world," they are affirming something that transcends them: peace is possible, here and now, starting from within. It is an act that is both humble and revolutionary.<br/>We are the generation that refuses to accept the inevitability of violence.</p>
-
-            <p>&#x1F44D;</p>
-
-            <p data-i18n="manifesto.p6">For centuries, the world has learned to structure war: armies, strategies, budgets, alliances, and industries. But humanity has never built an infrastructure for peace. A global structure where every individual can participate, where every gesture counts, and where every act of peace tangibly strengthens the world.</p>
-
-            <p data-i18n="manifesto.p7"><strong>NAVA PEACE is that first structure.</strong></p>
-            <ul class="manifesto-list">
-              <li data-i18n="manifesto.li3">A global network of consciousness.</li>
-              <li data-i18n="manifesto.li4">An economy of kindness.</li>
-              <li data-i18n="manifesto.li5">A planetary ritual of compassion and unity.</li>
-            </ul>
-
-            <p>&#x1F54A;</p>
-
-            <blockquote class="manifesto-quote" data-i18n="manifesto.quote2">"Peace is not a theory. It is a discipline."</blockquote>
-            <p data-i18n="manifesto.p8">It is cultivated like a muscle, practiced like an art. It demands presence, effort, and consistency.</p>
-
-            <p data-i18n="manifesto.p9">A daily gesture repeated by millions of people becomes a civilizational direction. A planetary habit. A movement that transcends borders, languages, religions, and identities. When we choose peace each morning, we train ourselves to be stronger than our fears, stronger than our wounds, more serene than our anger.</p>
-
-            <p>&#x1F54A;</p>
-
-            <p data-i18n="manifesto.p10">We become human beings capable of loving the world despite its shadows.</p>
-
-            <p data-i18n="manifesto.p11">This manifesto is for all</p>
-            <ul class="manifesto-list">
-              <li data-i18n="manifesto.li6">those who refuse to respond to violence with violence.</li>
-              <li data-i18n="manifesto.li7">For those who know that peace is not naive, but courageous.</li>
-              <li data-i18n="manifesto.li8">To those who understand that peace is not a weakness, but a strength.</li>
-              <li data-i18n="manifesto.li9">To those who see peace not as a dream, but as a daily endeavor.</li>
-              <li data-i18n="manifesto.li10">To those who, wounded, choose healing rather than passing on the pain.</li>
-              <li data-i18n="manifesto.li11">To those who have lost everything, but refuse to lose their humanity.</li>
-              <li data-i18n="manifesto.li12">To those who dream of a world where our children no longer have to choose between fear and freedom. &#x1F54A;</li>
-            </ul>
-
-            <p style="text-align:center;" data-i18n="manifesto.p12">I tell you:</p>
-            <p style="text-align:center;font-weight:700;font-size:1.1rem;" data-i18n="manifesto.p13">NAVA PEACE is our silent pledge.</p>
-
-            <p data-i18n="manifesto.p14" data-i18n-html>We cannot change the past. But we can create a future where peace is no longer the exception, but the norm.<br/>A future where the world rises each day, gesture by gesture, heart by heart, click by click. A future where peace is no longer a word, but a movement.</p>
-
-            <p style="text-align:center;" data-i18n="manifesto.p15">&#x1F4AB; <strong>We are the light-bearers of this century.</strong> &#x1F4AB;</p>
-
-            <ul class="manifesto-list">
-              <li data-i18n="manifesto.li13">We are those who refuse resignation.</li>
-              <li data-i18n="manifesto.li14">Those who choose unity.</li>
-              <li data-i18n="manifesto.li15">Those who want to build a world where human dignity is stronger than hatred.</li>
-              <li data-i18n="manifesto.li16">We are NAVA PEACE.</li>
-              <li data-i18n="manifesto.li17">We are humanity awakening.</li>
-              <li data-i18n="manifesto.li18">We are the dawn of a new world.</li>
-              <li data-i18n="manifesto.li19">And every day, with a simple gesture,</li>
-              <li data-i18n="manifesto.li20">we write together the most beautiful sentence in the history of humankind:</li>
-            </ul>
-
-            <blockquote class="manifesto-quote" data-i18n="manifesto.quote3" data-i18n-html>"Today, for me, for you,<br/>for us, I choose peace."</blockquote>
-            <p style="text-align:right;font-style:italic;color:rgba(255,255,255,0.7);">A.A. December 1, 2025</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p1">To change the world, our world, we don't need billions of dollars.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p2" data-i18n-html>WE NEED AN IDEA.<br/>AN IDEA CAPABLE OF CHANGING THE WORLD.<br/>We need NAVA PEACE.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p3" data-i18n-html>We need you, me, all of us, to commit daily to a simple idea:<br/>PEACE IS POSSIBLE, EVERYWHERE FOR EVERYONE.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p4">Together, we will bring peace to the world and change everything, because in a world where war is omnipresent, darkness darkens our dreams and hopes. Together, by believing in a better future, we can achieve it.</p>
+            <p style="text-align:center;font-weight:700;" data-i18n="howtoplay.intro_p5" data-i18n-html>BE THE CHANGE YOU WISH TO SEE IN THE WORLD.<br/>GANDHI!</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p6">NAVA PEACE's success is based on engagement through gamification.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p7">The season will last 180 days. It is during this time that we will sow the seeds of change and build our global community.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p8">I hope that millions, billions of us will play every day and share with our friends.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p9">Every time you open the app to play, you are choosing a better future for us and for future generations.</p>
+            <p style="text-align:center;" data-i18n="howtoplay.intro_p10">Consciously, you will be participating in a new form of economy: the economy of peace.</p>
           </div>
         </div>
+      </div>
+
+      <h2 class="section-heading animate-on-scroll" style="margin-top:30px;" data-i18n="howtoplay.start_heading" data-i18n-html>HOW TO START<br/>PLAYING NAVA PEACE</h2>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.start_title">How to start playing NAVA PEACE?</h3>
+        <p data-i18n="howtoplay.start_p1">To begin:</p>
+        <ul class="app-features">
+          <li data-i18n="howtoplay.start_li1" data-i18n-html>Download the app via the official link: <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" style="color:var(--white);text-decoration:underline;">t.me/NavaPeaceBot/app</a></li>
+          <li data-i18n="howtoplay.start_li2">Create your profile</li>
+          <li data-i18n="howtoplay.start_li3">Choose your avatar</li>
+          <li data-i18n="howtoplay.start_li4">You will automatically receive your first badge: PEACE LOVER</li>
+        </ul>
+        <p data-i18n="howtoplay.start_welcome">WELCOME to the NAVA PEACE adventure!</p>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.tokens_title">How do I get my first NAVA tokens?</h3>
+        <p data-i18n="howtoplay.tokens_p1">Your daily PEACE LOVER mission is to:</p>
+        <ul class="app-features">
+          <li data-i18n="howtoplay.tokens_li1">Open the app once every 24 hours (more often as you level up)</li>
+          <li data-i18n="howtoplay.tokens_li2">Click the button: "Today, I commit to peace, for everyone, everywhere."</li>
+        </ul>
+        <p data-i18n="howtoplay.tokens_congrats">Congratulations! Your daily action for peace is complete! See you tomorrow!</p>
+        <p data-i18n="howtoplay.tokens_tip1">&#x2B50; Tip: Set a daily alarm so you never miss your mining session.</p>
+        <p data-i18n="howtoplay.tokens_tip2">&#x2B50; By inviting your friends with your referral code, you earn extra tokens.</p>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.invite_title">How does the invitation system Work?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.invite_p1">After sending an invitation to your friends with your unique code, they become active when they start playing!</p>
+            <p data-i18n="howtoplay.invite_p2">&#x2714; 1 active friend = reward = 1 token per active friend</p>
+            <p data-i18n="howtoplay.invite_p3">If your friend remains inactive for 3 days, you won't receive your FREE daily token. So, encourage your friends to stay active!</p>
+            <p data-i18n="howtoplay.invite_p4">No multi-level system. No pyramid scheme. Just a simple, transparent, and fair reward structure.</p>
+            <p data-i18n="howtoplay.invite_p5">Get ready to earn free NFTs (level badges) and climb the ranks!</p>
+            <p data-i18n="howtoplay.invite_p6">The more invitations you send, the greater your chances of receiving FREE NFTs and seeing your rewards skyrocket.</p>
+            <p data-i18n="howtoplay.invite_p7">1 token per active friend is huge. Since mining will be deflationary, the invitation token will always be worth it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.nft_title">How do I get NAVA PEACE NFTs?</h3>
+        <p data-i18n="howtoplay.nft_p1">NFTs are available from the first day of the gamification app's launch.</p>
+        <p data-i18n="howtoplay.nft_p2">What are the different levels?</p>
+        <ul class="nft-levels">
+          <li>PEACE LOVER X1</li>
+          <li>PEACE GARDENER X2</li>
+          <li>PEACE GUARDIAN X3</li>
+          <li>PEACE GUIDE X4</li>
+          <li>PEACE ILLUMINATOR X5</li>
+          <li>PEACE LEGEND X6</li>
+          <li>ANGEL OF PEACE X8</li>
+          <li>PEACE POWER X10</li>
+        </ul>
+        <p data-i18n="howtoplay.nft_payment">Payment options: credit card or cryptocurrency.</p>
+
+        <!-- NFT Table -->
+        <div class="nft-table-wrapper">
+          <table class="nft-table">
+            <thead>
+              <tr>
+                <th data-i18n="howtoplay.th_level">LEVEL</th>
+                <th data-i18n="howtoplay.th_price">PRICE</th>
+                <th data-i18n="howtoplay.th_upgrade">INSTANT<br/>UPGRADE</th>
+                <th data-i18n="howtoplay.th_clicks">CLICK<br/>DAY</th>
+                <th data-i18n="howtoplay.th_rewards">REFERRAL REWARDS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>PEACE LOVER</td><td>Free</td><td>—</td><td>1</td><td data-i18n="howtoplay.ref1">TBD referrals = 1 PEACE GARDENER NFT</td></tr>
+              <tr><td>PEACE GARDENER</td><td>TBD</td><td>TBD</td><td>2</td><td data-i18n="howtoplay.ref2">TBD referrals = 1 PEACE GUIDE</td></tr>
+              <tr><td>PEACE GUARDIAN</td><td>TBD</td><td>TBD</td><td>3</td><td data-i18n="howtoplay.ref3">TBD referrals = 1 PEACE GUARDIAN</td></tr>
+              <tr><td>PEACE GUIDE</td><td>TBD</td><td>TBD</td><td>4</td><td data-i18n="howtoplay.ref4">TBD referrals = 1 PEACE ILLUMINATOR</td></tr>
+              <tr><td>PEACE ILLUMINATOR</td><td>TBD</td><td>TBD</td><td>5</td><td data-i18n="howtoplay.ref5">TBD referrals = 1 PEACE LEGEND</td></tr>
+              <tr><td>PEACE LEGEND</td><td>TBD</td><td>TBD</td><td>6</td><td>—</td></tr>
+              <tr><td>ANGEL OF PEACE</td><td>TBD</td><td>TBD</td><td>8</td><td data-i18n="howtoplay.ref6">Instantly upgrade from LOVER → LEGEND</td></tr>
+              <tr><td>PEACE POWER</td><td>TBD</td><td>TBD</td><td>10</td><td data-i18n="howtoplay.ref7">Exclusive access &amp; global privileges</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.nft_why_title">Why are NFTs important?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.nft_why_p1">Because they allow you to:</p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.nft_why_li1">&#x2714; mine faster</li>
+              <li data-i18n="howtoplay.nft_why_li2">&#x2714; earn more tokens</li>
+              <li data-i18n="howtoplay.nft_why_li3">&#x2714; get more rewards</li>
+              <li data-i18n="howtoplay.nft_why_li4">&#x2714; unlock exclusive rights and discounts</li>
+            </ul>
+            <p data-i18n="howtoplay.nft_why_p2">Later, perhaps, have the chance to serve on the foundation's board of directors for a season.</p>
+            <p data-i18n="howtoplay.nft_why_p3"><strong>An NFT = a mining accelerator, a future investment, a proof of trust = an unconditional commitment</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.mining_title">What is mining in NAVA PEACE? How does it Work?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.mining_p1">Phase 1: Imagine NAVA PEACE as a giant global video game where everyone strives to make the planet a little kinder each day, with a common end goal:</p>
+            <p style="font-weight:700;text-align:center;" data-i18n="howtoplay.mining_p2">To create a peace economy by connecting the entire World Within a single community.</p>
+            <p data-i18n="howtoplay.mining_p3">To share "I choose peace today, for everyone, everywhere in the world," all you have to do is tap a magic button in the app.</p>
+            <p data-i18n="howtoplay.mining_p4" data-i18n-html>And when you tap that button... something amazing happens.<br/>You earn NAVA tokens. This is called mining. Every transaction is recorded on the blockchain. It's irreversible, immutable, and anonymous.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.what_mining_title">&#x1F44D; So, What is mining?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.what_mining_p1">Mining is a process that takes place on the blockchain with every peaceful action you perform. Each action is recorded and visible to all users connected to the blockchain. All actions are tallied and linked to a wallet: yours.</p>
+            <p data-i18n="howtoplay.what_mining_p2">You don't need a machine or electricity.</p>
+            <p data-i18n="howtoplay.what_mining_p3"><strong>All you need is your phone and your willingness to participate.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.how_mining_title">How does mining Work in NAVA PEACE?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.how_mining_p1">You are rewarded for:</p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.how_mining_li1">Your daily mining activity</li>
+              <li data-i18n="howtoplay.how_mining_li2">If you return every day → you earn more.</li>
+              <li data-i18n="howtoplay.how_mining_li3">By reaching referral milestones, you will receive a free NFT allowing you to boost your mining speed!</li>
+            </ul>
+            <p data-i18n="howtoplay.how_mining_p2" data-i18n-html>Your friends' activity<br/>If you invite friends → you earn more.</p>
+            <p data-i18n="howtoplay.how_mining_p3" data-i18n-html>But your friends must play to receive your daily reward for their participation. Teamwork! Human chain!<br/>If you are consistent (streaks), you earn more!</p>
+            <p data-i18n="howtoplay.how_mining_p4"><strong>Streak Bonus: FREE tokens:</strong></p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.how_mining_streak1">≥ 7 days: +2 tokens</li>
+              <li data-i18n="howtoplay.how_mining_streak2">≥ 14 days: +5 tokens</li>
+              <li data-i18n="howtoplay.how_mining_streak3">≥ 21 days: +8 tokens</li>
+              <li data-i18n="howtoplay.how_mining_streak4">≥ 28 days: +10 tokens</li>
+            </ul>
+            <p data-i18n="howtoplay.how_mining_p5">If you reach higher levels → you can mine faster.</p>
+            <p data-i18n="howtoplay.how_mining_p6">&#x1F44D; <strong>Does everyone earn the same amount?</strong></p>
+            <p data-i18n="howtoplay.how_mining_p7" data-i18n-html>Yes and no.<br/>The rules of the game are the same for everyone, but if some have many friends or invest in NFTs to progress faster, then they will earn significantly more tokens.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.halving_title">&#x1F44D; Every 30 days, the mining reward will be halved.</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.halving_p1">This system ensures fairness for everyone and rewards your actions: it's called the halving.</p>
+            <p data-i18n="howtoplay.halving_p2">If rewards remained high indefinitely, the system would be flooded with tokens and their value would decrease significantly. The halving slows production over time, preserves scarcity, controls inflation, and rewards early participants, while ensuring economic stability for everyone.</p>
+            <p data-i18n="howtoplay.halving_p3"><strong>Reward Table:</strong></p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.halving_r1" data-i18n-html>Days 1-30: Difficulty level 1.<br/>Each click on the "Peace" button earns you 1 token.</li>
+              <li data-i18n="howtoplay.halving_r2" data-i18n-html>Days 31-60: Difficulty level 2.<br/>Each click on the "Peace" button earns you 0.5 tokens.</li>
+              <li data-i18n="howtoplay.halving_r3" data-i18n-html>Days 61-90: Difficulty level 4.<br/>Each click on the "Peace" button earns you 0.25 tokens.</li>
+              <li data-i18n="howtoplay.halving_r4" data-i18n-html>From day 91 to day 120, the difficulty is 8.<br/>Each click on the "Peace" button earns you 0.125 tokens.</li>
+              <li data-i18n="howtoplay.halving_r5" data-i18n-html>From day 121 to day 150, the difficulty is 16.<br/>Each click on the "Peace" button earns you 0.0625 tokens.</li>
+              <li data-i18n="howtoplay.halving_r6" data-i18n-html>From day 151 to day 180, the difficulty is 32.<br/>Each click on the "Peace" button earns you 0.03125 tokens.</li>
+            </ul>
+            <p data-i18n="howtoplay.halving_p4">HALVING the tokens is necessary to preserve their value and fairness.</p>
+            <p style="text-align:center;font-weight:700;" data-i18n="howtoplay.halving_p5">Together, let's build a peaceful economy through millions of peaceful actions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.season_title">What happens at the end of SEASON 1?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.season_p1">&#x1F54A; Season 1 will last 180 days. &#x1F54A;</p>
+            <p data-i18n="howtoplay.season_p2" data-i18n-html>During these 180 days, YOU, the miners, create the economic base of the NAVA PEACE token.<br/>This represents 20% of the total supply issued.</p>
+            <p data-i18n="howtoplay.season_p3">At the end of SEASON 1, the smart contract generates the remaining 80% of the supply.</p>
+            <p data-i18n="howtoplay.season_p4">For example: if 100 million tokens are issued during Season 1, 400 million NAVA PEACE tokens will be issued simultaneously for a total supply of 500 million tokens.</p>
+            <p data-i18n="howtoplay.season_p5">These tokens will then be automatically sent to the destination wallet as follows:</p>
+            <ul class="app-features token-dist-list">
+              <li><span data-i18n="howtoplay.season_li1">50% NAVA PEACE WORLD Foundation</span><button class="tdi-btn" onclick="showTokenInfo('howtoplay.season_li1_desc')" aria-label="info">ℹ</button></li>
+              <li><span data-i18n="howtoplay.season_li2">20% Community</span><button class="tdi-btn" onclick="showTokenInfo('howtoplay.season_li2_desc')" aria-label="info">ℹ</button></li>
+              <li><span data-i18n="howtoplay.season_li3">14% Strategic Reserve</span><button class="tdi-btn" onclick="showTokenInfo('howtoplay.season_li3_desc')" aria-label="info">ℹ</button></li>
+              <li><span data-i18n="howtoplay.season_li4">10% Liquidity Pool</span><button class="tdi-btn" onclick="showTokenInfo('howtoplay.season_li4_desc')" aria-label="info">ℹ</button></li>
+              <li><span data-i18n="howtoplay.season_li5">6% Founder/Creator/Chairman</span><button class="tdi-btn" onclick="showTokenInfo('howtoplay.season_li5_desc')" aria-label="info">ℹ</button></li>
+            </ul>
+
+            <!-- Token Info Popup -->
+            <div id="tdi-overlay" onclick="closeTDI()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.72);align-items:center;justify-content:center;padding:20px;box-sizing:border-box;">
+              <div onclick="event.stopPropagation()" style="background:#0b1e36;border:1px solid rgba(109,213,245,0.35);border-radius:18px;padding:26px 24px;max-width:340px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,0.6);">
+                <p id="tdi-text" style="color:#e8f4ff;font-size:15px;line-height:1.65;margin:0 0 18px;"></p>
+                <button onclick="closeTDI()" style="width:100%;padding:10px;background:rgba(109,213,245,0.15);border:1px solid rgba(109,213,245,0.4);border-radius:10px;color:#6DD5F5;font-size:12px;letter-spacing:3px;cursor:pointer;font-family:inherit;">CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.access_title">When will I be able to access my tokens?</h3>
+        <div class="reading-window">
+          <div class="reading-window-inner">
+            <p data-i18n="howtoplay.access_p1" data-i18n-html>You will have access to your tokens at the end of the 180-day season.<br/>At the end of Season 1:</p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.access_li1">Our blockchain will be operational.</li>
+              <li data-i18n="howtoplay.access_li2">The NAVA PEACE WORLD app will be available.</li>
+              <li data-i18n="howtoplay.access_li3" data-i18n-html>The liquidity pool will give your tokens their true value.<br/>Example: 1 Token = 1 USD</li>
+            </ul>
+            <p data-i18n="howtoplay.access_p2" data-i18n-html>Once the blockchain is live, the token will become a Cryptocurrency, like Bitcoin or Ethereum.<br/>You will then be able to:</p>
+            <ul class="app-features">
+              <li data-i18n="howtoplay.access_li4">trade your tokens on decentralized exchanges;</li>
+              <li data-i18n="howtoplay.access_li5">pay for services and products via the NAVA PEACE WORLD app;</li>
+              <li data-i18n="howtoplay.access_li6">stake your tokens;</li>
+              <li data-i18n="howtoplay.access_li7">order a NAVA PEACE credit card from NAVA PEACE BANK;</li>
+              <li data-i18n="howtoplay.access_li8">purchase NAVA PEACE insurance;</li>
+              <li data-i18n="howtoplay.access_li9">transfer NAVA tokens, donate NAVA PEACE tokens to your favorite NGO...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card animate-on-scroll">
+        <h3 data-i18n="howtoplay.wallet_title">How is your digital Wallet secured?</h3>
+        <p data-i18n="howtoplay.wallet_p1">A digital wallet is generated automatically.</p>
+        <ul class="app-features">
+          <li data-i18n="howtoplay.wallet_li1">To secure it, a 24-word recovery phrase is used.</li>
+          <li data-i18n="howtoplay.wallet_li2">Compatible with offline wallets.</li>
+          <li data-i18n="howtoplay.wallet_li3">No personal data is stored.</li>
+          <li data-i18n="howtoplay.wallet_li4">An auto-generated wallet is a crypto wallet created without any technical action on your part.</li>
+        </ul>
+        <p data-i18n="howtoplay.wallet_p2">The platform automatically generates:</p>
+        <ul class="app-features">
+          <li data-i18n="howtoplay.wallet_li5">a public address,</li>
+          <li data-i18n="howtoplay.wallet_li6">a private key,</li>
+          <li data-i18n="howtoplay.wallet_li7">a recovery phrase (seed phrase),</li>
+          <li data-i18n="howtoplay.wallet_li8">and associates it with the user.</li>
+        </ul>
+      </div>
+
+      <!-- Super App Phase 2 -->
+      <div class="info-card animate-on-scroll">
+        <p data-i18n="howtoplay.phase2">In Phase 2, We will launch the "Nava Peace World" app, a super app connecting you to the entire market of PEACE LOVERS WorldWide.</p>
+      </div>
+      <div class="cta-wrapper animate-on-scroll">
+        <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" class="cta-download" data-i18n="cta.start">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          START MINING PEACE
+        </a>
       </div>
     </div>
   </section>
@@ -345,8 +641,8 @@
 
       <div class="blockchain-img-wrapper animate-on-scroll">
         <div class="blockchain-img-container">
-          <img src="assets/blockchain.png" alt="NAVA PEACE Blockchain" class="blockchain-img" />
-          <img src="assets/dove-logo.png" alt="NAVA PEACE Logo" class="blockchain-logo-overlay" />
+          <img src="assets/blockchain.png" alt="NAVA PEACE Blockchain" class="blockchain-img" loading="lazy" />
+          <img src="assets/dove-logo.png" alt="NAVA PEACE Logo" class="blockchain-logo-overlay" loading="lazy" />
         </div>
       </div>
 
@@ -364,7 +660,7 @@
         </div>
       </div>
 
-      <h2 class="section-heading animate-on-scroll" style="margin-top:60px;" data-i18n="blockchain.heading2" data-i18n-html>THE BLOCKCHAIN<br/>REVOLUTION STARTS<br/>HERE</h2>
+      <h2 class="section-heading animate-on-scroll" style="margin-top:30px;" data-i18n="blockchain.heading2" data-i18n-html>THE BLOCKCHAIN<br/>REVOLUTION STARTS<br/>HERE</h2>
 
       <div class="card-white animate-on-scroll">
         <div class="reading-window">
@@ -432,317 +728,6 @@
             <p style="text-align:right;font-style:italic;opacity:0.7;">J.H. The Chairman<br/>December 1st 2025</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== FOUNDATION ======== -->
-  <section class="section-foundation" id="foundation">
-    <div class="container">
-      <h2 class="section-heading animate-on-scroll" data-i18n="foundation.heading" data-i18n-html>NAVA PEACE<br/>FOUNDATION</h2>
-      <p class="section-subheading animate-on-scroll" data-i18n="foundation.subheading">A transparent and action-oriented foundation that supports victims of war and funds peace initiatives.</p>
-
-      <div class="foundation-circle animate-on-scroll">
-        <div class="foundation-dove">
-          <img src="assets/dove-logo.png" alt="Peace Dove" class="foundation-dove-img" />
-        </div>
-        <div class="foundation-pillar">
-          <h3 data-i18n="foundation.h_humanitarian">Humanitarian Support</h3>
-          <p data-i18n="foundation.p_humanitarian">Medical aid, food aid, water treatment, prosthetics, psychological support.</p>
-        </div>
-        <div class="foundation-pillar">
-          <h3 data-i18n="foundation.h_peace">Peace Projects</h3>
-          <p data-i18n="foundation.p_peace">Education, reconciliation, cultural exchange.</p>
-        </div>
-        <div class="foundation-pillar">
-          <h3 data-i18n="foundation.h_reconstruction">Reconstruction</h3>
-          <p data-i18n="foundation.p_reconstruction">Homes, hearts, souls, hope for all, everywhere, using the rubble to build new structures.</p>
-        </div>
-        <div class="foundation-pillar">
-          <h3 data-i18n="foundation.h_transparency">Radical Transparency</h3>
-          <p data-i18n="foundation.p_transparency">Thanks to blockchain technology, every NAVA PEACE token spent will be publicly accountable.</p>
-        </div>
-      </div>
-
-      <div class="card-white animate-on-scroll" style="margin-top:40px;">
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="foundation.p1" data-i18n-html>50% of the tokens issued will be managed by <strong>the NAVA PEACE Foundation for Peace</strong>, administered by a board of directors composed of honorary and elected members.</p>
-            <p data-i18n="foundation.p2"><strong>The foundation's missions include:</strong></p>
-            <ul class="app-features">
-              <li data-i18n="foundation.li1">emergency food aid</li>
-              <li data-i18n="foundation.li2">housing reconstruction</li>
-              <li data-i18n="foundation.li3">eco-construction training</li>
-              <li data-i18n="foundation.li4">permaculture training</li>
-              <li data-i18n="foundation.li5">installation of clean water systems</li>
-              <li data-i18n="foundation.li6">training and installation of green energy systems</li>
-              <li data-i18n="foundation.li7">3D printing of prosthetics and essential items</li>
-              <li data-i18n="foundation.li8">a global fleet of volunteers ready to respond</li>
-              <li data-i18n="foundation.li9">floating farms and much more...</li>
-            </ul>
-            <p data-i18n="foundation.p3"><strong>A global rapid response network will be deployed to provide immediate assistance to crisis zones.</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== HOW TO PLAY ======== -->
-  <section class="section-howtoplay" id="howtoplay">
-    <div class="container">
-      <h2 class="section-heading animate-on-scroll" data-i18n="howtoplay.heading">EVERYTHING YOU NEED TO KNOW.</h2>
-      <p class="section-subheading animate-on-scroll" data-i18n="howtoplay.sub1">How to play? How to Improve?</p>
-      <p class="section-subheading animate-on-scroll" style="color:var(--pink-light);" data-i18n="howtoplay.sub2"><strong>How to win? And most importantly... why?</strong></p>
-
-      <div class="card-light animate-on-scroll">
-        <p style="text-align:center;color:var(--white);" data-i18n="howtoplay.intro_title">A brief introduction:</p>
-        <div class="reading-window reading-window-dark">
-          <div class="reading-window-inner">
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p1">To change the world, our world, we don't need billions of dollars.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p2" data-i18n-html>WE NEED AN IDEA.<br/>AN IDEA CAPABLE OF CHANGING THE WORLD.<br/>We need NAVA PEACE.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p3" data-i18n-html>We need you, me, all of us, to commit daily to a simple idea:<br/>PEACE IS POSSIBLE, EVERYWHERE FOR EVERYONE.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p4">Together, we will bring peace to the world and change everything, because in a world where war is omnipresent, darkness darkens our dreams and hopes. Together, by believing in a better future, we can achieve it.</p>
-            <p style="text-align:center;font-weight:700;" data-i18n="howtoplay.intro_p5" data-i18n-html>BE THE CHANGE YOU WISH TO SEE IN THE WORLD.<br/>GANDHI!</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p6">NAVA PEACE's success is based on engagement through gamification.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p7">The season will last 180 days. It is during this time that we will sow the seeds of change and build our global community.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p8">I hope that millions, billions of us will play every day and share with our friends.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p9">Every time you open the app to play, you are choosing a better future for us and for future generations.</p>
-            <p style="text-align:center;" data-i18n="howtoplay.intro_p10">Consciously, you will be participating in a new form of economy: the economy of peace.</p>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="section-heading animate-on-scroll" style="margin-top:60px;" data-i18n="howtoplay.start_heading" data-i18n-html>HOW TO START<br/>PLAYING NAVA PEACE</h2>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.start_title">How to start playing NAVA PEACE?</h3>
-        <p data-i18n="howtoplay.start_p1">To begin:</p>
-        <ul class="app-features">
-          <li data-i18n="howtoplay.start_li1">Download the app via the official link: www.nava-peace.app</li>
-          <li data-i18n="howtoplay.start_li2">Create your profile</li>
-          <li data-i18n="howtoplay.start_li3">Choose your avatar</li>
-          <li data-i18n="howtoplay.start_li4">You will automatically receive your first badge: PEACE LOVER</li>
-        </ul>
-        <p data-i18n="howtoplay.start_welcome">WELCOME to the NAVA PEACE adventure!</p>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.tokens_title">How do I get my first NAVA tokens?</h3>
-        <p data-i18n="howtoplay.tokens_p1">Your daily PEACE LOVER mission is to:</p>
-        <ul class="app-features">
-          <li data-i18n="howtoplay.tokens_li1">Open the app once every 24 hours (more often as you level up)</li>
-          <li data-i18n="howtoplay.tokens_li2">Click the button: "Today, I commit to peace, for everyone, everywhere."</li>
-        </ul>
-        <p data-i18n="howtoplay.tokens_congrats">Congratulations! Your daily action for peace is complete! See you tomorrow!</p>
-        <p data-i18n="howtoplay.tokens_tip1">&#x2B50; Tip: Set a daily alarm so you never miss your mining session.</p>
-        <p data-i18n="howtoplay.tokens_tip2">&#x2B50; By inviting your friends with your referral code, you earn extra tokens.</p>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.invite_title">How does the invitation system Work?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.invite_p1">After sending an invitation to your friends with your unique code, they become active when they start playing!</p>
-            <p data-i18n="howtoplay.invite_p2">&#x2714; 1 active friend = reward = 1 token per active friend</p>
-            <p data-i18n="howtoplay.invite_p3">If your friend remains inactive for 3 days, you won't receive your FREE daily token. So, encourage your friends to stay active!</p>
-            <p data-i18n="howtoplay.invite_p4">No multi-level system. No pyramid scheme. Just a simple, transparent, and fair reward structure.</p>
-            <p data-i18n="howtoplay.invite_p5">Get ready to earn free NFTs (level badges) and climb the ranks!</p>
-            <p data-i18n="howtoplay.invite_p6">The more invitations you send, the greater your chances of receiving FREE NFTs and seeing your rewards skyrocket.</p>
-            <p data-i18n="howtoplay.invite_p7">1 token per active friend is huge. Since mining will be deflationary, the invitation token will always be worth it.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.nft_title">How do I get NAVA PEACE NFTs?</h3>
-        <p data-i18n="howtoplay.nft_p1">NFTs are available from the first day of the gamification app's launch.</p>
-        <p data-i18n="howtoplay.nft_p2">What are the different levels?</p>
-        <ul class="nft-levels">
-          <li>PEACE LOVER X1</li>
-          <li>PEACE GARDENER X2</li>
-          <li>PEACE GUARDIAN X</li>
-          <li>PEACE GUIDE</li>
-          <li>PEACE ILLUMINATOR</li>
-          <li>PEACE LEGEND</li>
-          <li>ANGEL OF PEACE</li>
-        </ul>
-        <p data-i18n="howtoplay.nft_payment">Payment options: credit card or cryptocurrency.</p>
-
-        <!-- NFT Table -->
-        <div class="nft-table-wrapper">
-          <table class="nft-table">
-            <thead>
-              <tr>
-                <th data-i18n="howtoplay.th_level">LEVEL</th>
-                <th data-i18n="howtoplay.th_price">PRICE</th>
-                <th data-i18n="howtoplay.th_clicks">CLICKX/DAY</th>
-                <th data-i18n="howtoplay.th_rewards">REFERRAL REWARDS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>PEACE LOVER</td><td>Free</td><td>1</td><td data-i18n="howtoplay.ref1">100 referrals = 1 PEACE GARDENER NFT</td></tr>
-              <tr><td>PEACE GARDENER</td><td>$50</td><td>2</td><td data-i18n="howtoplay.ref2">500 referrals = 1 PEACE GUIDE</td></tr>
-              <tr><td>PEACE GUIDE</td><td>$100</td><td>3</td><td data-i18n="howtoplay.ref3">500 referrals = 1 PEACE GUARDIAN</td></tr>
-              <tr><td>PEACE GUARDIAN</td><td>$225</td><td>4</td><td data-i18n="howtoplay.ref4">2000 referrals = 1 PEACE ILLUMINATOR</td></tr>
-              <tr><td>PEACE ILLUMINATOR</td><td>$700</td><td>5</td><td data-i18n="howtoplay.ref5">2500 referrals = 1 PEACE LEGEND</td></tr>
-              <tr><td>PEACE LEGEND</td><td>$1500</td><td>6</td><td>—</td></tr>
-              <tr><td>PEACE ANGEL (Charter)</td><td>$5000</td><td>8</td><td data-i18n="howtoplay.ref6">Instantly upgrade from LOVER → LEGEND</td></tr>
-              <tr><td>PEACE POWER</td><td>$25,000</td><td>10+</td><td data-i18n="howtoplay.ref7">Exclusive access &amp; global privileges</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.nft_why_title">Why are NFTs important?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.nft_why_p1">Because they allow you to:</p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.nft_why_li1">&#x2714; mine faster</li>
-              <li data-i18n="howtoplay.nft_why_li2">&#x2714; earn more tokens</li>
-              <li data-i18n="howtoplay.nft_why_li3">&#x2714; get more rewards</li>
-              <li data-i18n="howtoplay.nft_why_li4">&#x2714; unlock exclusive rights and discounts</li>
-            </ul>
-            <p data-i18n="howtoplay.nft_why_p2">Later, perhaps, have the chance to serve on the foundation's board of directors for a season.</p>
-            <p data-i18n="howtoplay.nft_why_p3"><strong>An NFT = a mining accelerator, a future investment, a proof of trust = an unconditional commitment</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.mining_title">What is mining in NAVA PEACE? How does it Work?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.mining_p1">Phase 1: Imagine NAVA PEACE as a giant global video game where everyone strives to make the planet a little kinder each day, with a common end goal:</p>
-            <p style="font-weight:700;text-align:center;" data-i18n="howtoplay.mining_p2">To create a peace economy by connecting the entire World Within a single community.</p>
-            <p data-i18n="howtoplay.mining_p3">To share "I choose peace today, for everyone, everywhere in the world," all you have to do is tap a magic button in the app.</p>
-            <p data-i18n="howtoplay.mining_p4" data-i18n-html>And when you tap that button... something amazing happens.<br/>You earn NAVA tokens. This is called mining. Every transaction is recorded on the blockchain. It's irreversible, immutable, and anonymous.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.what_mining_title">&#x1F44D; So, What is mining?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.what_mining_p1">Mining is a process that takes place on the blockchain with every peaceful action you perform. Each action is recorded and visible to all users connected to the blockchain. All actions are tallied and linked to a wallet: yours.</p>
-            <p data-i18n="howtoplay.what_mining_p2">You don't need a machine or electricity.</p>
-            <p data-i18n="howtoplay.what_mining_p3"><strong>All you need is your phone and your willingness to participate.</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.how_mining_title">How does mining Work in NAVA PEACE?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.how_mining_p1">You are rewarded for:</p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.how_mining_li1">Your daily mining activity</li>
-              <li data-i18n="howtoplay.how_mining_li2">If you return every day → you earn more.</li>
-              <li data-i18n="howtoplay.how_mining_li3">By reaching referral levels 500/1000/1500/2000/2500, you will receive a free NFT allowing you to boost your mining speed!</li>
-            </ul>
-            <p data-i18n="howtoplay.how_mining_p2" data-i18n-html>Your friends' activity<br/>If you invite friends → you earn more.</p>
-            <p data-i18n="howtoplay.how_mining_p3" data-i18n-html>But your friends must play to receive your daily reward for their participation. Teamwork! Human chain!<br/>If you are consistent (streaks), you earn more!</p>
-            <p data-i18n="howtoplay.how_mining_p4"><strong>Streak Bonus: FREE tokens:</strong></p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.how_mining_streak1">≥ 7 days: +2 tokens</li>
-              <li data-i18n="howtoplay.how_mining_streak2">≥ 14 days: +5 tokens</li>
-              <li data-i18n="howtoplay.how_mining_streak3">≥ 21 days: +8 tokens</li>
-              <li data-i18n="howtoplay.how_mining_streak4">≥ 28 days: +10 tokens</li>
-            </ul>
-            <p data-i18n="howtoplay.how_mining_p5">If you reach higher levels → you can mine faster.</p>
-            <p data-i18n="howtoplay.how_mining_p6">&#x1F44D; <strong>Does everyone earn the same amount?</strong></p>
-            <p data-i18n="howtoplay.how_mining_p7" data-i18n-html>Yes and no.<br/>The rules of the game are the same for everyone, but if some have many friends or invest in NFTs to progress faster, then they will earn significantly more tokens.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.halving_title">&#x1F44D; Every 30 days, the mining reward will be halved.</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.halving_p1">This system ensures fairness for everyone and rewards your actions: it's called the halving.</p>
-            <p data-i18n="howtoplay.halving_p2">If rewards remained high indefinitely, the system would be flooded with tokens and their value would decrease significantly. The halving slows production over time, preserves scarcity, controls inflation, and rewards early participants, while ensuring economic stability for everyone.</p>
-            <p data-i18n="howtoplay.halving_p3"><strong>Reward Table:</strong></p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.halving_r1" data-i18n-html>Days 1-30: Difficulty level 1.<br/>Each click on the "Peace" button earns you 1 token.</li>
-              <li data-i18n="howtoplay.halving_r2" data-i18n-html>Days 31-60: Difficulty level 2.<br/>Each click on the "Peace" button earns you 0.5 tokens.</li>
-              <li data-i18n="howtoplay.halving_r3" data-i18n-html>Days 61-90: Difficulty level 4.<br/>Each click on the "Peace" button earns you 0.25 tokens.</li>
-              <li data-i18n="howtoplay.halving_r4" data-i18n-html>From day 91 to day 120, the difficulty is 8.<br/>Each click on the "Peace" button earns you 0.125 tokens.</li>
-              <li data-i18n="howtoplay.halving_r5" data-i18n-html>From day 121 to day 150, the difficulty is 16.<br/>Each click on the "Peace" button earns you 0.0625 tokens.</li>
-              <li data-i18n="howtoplay.halving_r6" data-i18n-html>From day 151 to day 180, the difficulty is 32.<br/>Each click on the "Peace" button earns you 0.03125 tokens.</li>
-            </ul>
-            <p data-i18n="howtoplay.halving_p4">HALVING the tokens is necessary to preserve their value and fairness.</p>
-            <p style="text-align:center;font-weight:700;" data-i18n="howtoplay.halving_p5">Together, let's build a peaceful economy through millions of peaceful actions.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.season_title">What happens at the end of SEASON 1?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.season_p1">&#x1F54A; Season 1 will last 180 days. &#x1F54A;</p>
-            <p data-i18n="howtoplay.season_p2" data-i18n-html>During these 180 days, YOU, the miners, create the economic base of the NAVA PEACE token.<br/>This represents 20% of the total supply issued.</p>
-            <p data-i18n="howtoplay.season_p3">At the end of SEASON 1, the smart contract generates the remaining 80% of the supply.</p>
-            <p data-i18n="howtoplay.season_p4">For example: if 100 million tokens are issued during Season 1, 400 million NAVA PEACE tokens will be issued simultaneously for a total supply of 500 million tokens.</p>
-            <p data-i18n="howtoplay.season_p5">These tokens will then be automatically sent to the destination wallet as follows:</p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.season_li1">50% NAVA PEACE WORLD Foundation</li>
-              <li data-i18n="howtoplay.season_li2">20% Liquidity Pool</li>
-              <li data-i18n="howtoplay.season_li3">14% Strategic Reserve</li>
-              <li data-i18n="howtoplay.season_li4">6% Founder/Creator/Chairman</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.access_title">When will I be able to access my tokens?</h3>
-        <div class="reading-window">
-          <div class="reading-window-inner">
-            <p data-i18n="howtoplay.access_p1" data-i18n-html>You will have access to your tokens at the end of the 180-day season.<br/>At the end of Season 1:</p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.access_li1">Our blockchain will be operational.</li>
-              <li data-i18n="howtoplay.access_li2">The NAVA PEACE WORLD app will be available.</li>
-              <li data-i18n="howtoplay.access_li3" data-i18n-html>The liquidity pool will give your tokens their true value.<br/>Example: 1 Token = 1 USD</li>
-            </ul>
-            <p data-i18n="howtoplay.access_p2" data-i18n-html>Once the blockchain is live, the token will become a Cryptocurrency, like Bitcoin or Ethereum.<br/>You will then be able to:</p>
-            <ul class="app-features">
-              <li data-i18n="howtoplay.access_li4">trade your tokens on decentralized exchanges;</li>
-              <li data-i18n="howtoplay.access_li5">pay for services and products via the NAVA PEACE WORLD app;</li>
-              <li data-i18n="howtoplay.access_li6">stake your tokens;</li>
-              <li data-i18n="howtoplay.access_li7">order a NAVA PEACE credit card from NAVA PEACE BANK;</li>
-              <li data-i18n="howtoplay.access_li8">purchase NAVA PEACE insurance;</li>
-              <li data-i18n="howtoplay.access_li9">transfer NAVA tokens, donate NAVA PEACE tokens to your favorite NGO...</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-card animate-on-scroll">
-        <h3 data-i18n="howtoplay.wallet_title">How is your digital Wallet secured?</h3>
-        <p data-i18n="howtoplay.wallet_p1">A digital wallet is generated automatically.</p>
-        <ul class="app-features">
-          <li data-i18n="howtoplay.wallet_li1">To secure it, a 24-word recovery phrase is used.</li>
-          <li data-i18n="howtoplay.wallet_li2">Compatible with offline wallets.</li>
-          <li data-i18n="howtoplay.wallet_li3">No personal data is stored.</li>
-          <li data-i18n="howtoplay.wallet_li4">An auto-generated wallet is a crypto wallet created without any technical action on your part.</li>
-        </ul>
-        <p data-i18n="howtoplay.wallet_p2">The platform automatically generates:</p>
-        <ul class="app-features">
-          <li data-i18n="howtoplay.wallet_li5">a public address,</li>
-          <li data-i18n="howtoplay.wallet_li6">a private key,</li>
-          <li data-i18n="howtoplay.wallet_li7">a recovery phrase (seed phrase),</li>
-          <li data-i18n="howtoplay.wallet_li8">and associates it with the user.</li>
-        </ul>
-      </div>
-
-      <!-- Super App Phase 2 -->
-      <div class="info-card animate-on-scroll">
-        <p data-i18n="howtoplay.phase2">In Phase 2, We will launch the "Nava Peace World" app, a super app connecting you to the entire market of PEACE LOVERS WorldWide.</p>
       </div>
     </div>
   </section>
@@ -823,7 +808,7 @@
             <ul class="app-features" style="color:var(--white);">
               <li data-i18n="roadmap.phase2_nft1">NFTs: PEACEKEEPER &gt; PEACE POWER</li>
               <li data-i18n="roadmap.phase2_nft2">NFTs purchased</li>
-              <li data-i18n="roadmap.phase2_nft3">NFTs received for Every 500 referrals</li>
+              <li data-i18n="roadmap.phase2_nft3">NFTs received for reaching referral milestones</li>
               <li data-i18n="roadmap.phase2_nft4">Fiat and crypto payment</li>
             </ul>
             <ul class="app-features" style="color:var(--white);">
@@ -917,24 +902,119 @@
     </div>
   </section>
 
+  <!-- ======== PHILOSOPHICAL MANIFESTO ======== -->
+  <section class="section-manifesto" id="manifesto">
+    <div class="container">
+      <h2 class="manifesto-title animate-on-scroll" data-i18n="manifesto.heading" data-i18n-html>PHILOSOPHICAL<br/>MANIFESTO</h2>
+      <p class="manifesto-hearts animate-on-scroll">&#x1F499; &#x1F49C; &#x1F49B;</p>
+
+      <div class="card-manifesto animate-on-scroll">
+        <div class="reading-window reading-window-dark reading-window-lg">
+          <div class="reading-window-inner">
+            <blockquote class="manifesto-quote" data-i18n="manifesto.quote1" data-i18n-html>"Every day, humanity has a choice.<br/>Today, we choose peace."</blockquote>
+
+            <p data-i18n="manifesto.p1">There is a moment, invisible yet decisive, when a civilization chooses what it wants to become. This moment is neither political, nor religious, nor economic. It is internal, silent, individual.</p>
+
+            <p data-i18n="manifesto.p2">It is made of a gesture, an intention, a choice. This gesture is peace. And this choice belongs to us. NAVA PEACE is the global framework that transforms this intimate choice into a visible, measurable, and powerful force.</p>
+
+            <p data-i18n="manifesto.p3"><strong>NAVA PEACE is born from a simple and profound conviction:</strong></p>
+
+            <ul class="manifesto-list">
+              <li data-i18n="manifesto.li1"><strong>Peace is not an event. It is a practice.</strong></li>
+              <li data-i18n="manifesto.li2"><strong>And it begins within each of us.</strong></li>
+            </ul>
+
+            <p data-i18n="manifesto.p4">It depends neither on governments, nor treaties, <em>nor</em> the powerful, but on the quiet strength of ordinary hearts that choose not to give in to fear or hatred.</p>
+
+            <p data-i18n="manifesto.p5" data-i18n-html>Every time a human being clicks the button, "Today, I commit to peace, for everyone, everywhere in the world," they are affirming something that transcends them: peace is possible, here and now, starting from within. It is an act that is both humble and revolutionary.<br/>We are the generation that refuses to accept the inevitability of violence.</p>
+
+            <p>&#x1F44D;</p>
+
+            <p data-i18n="manifesto.p6">For centuries, the world has learned to structure war: armies, strategies, budgets, alliances, and industries. But humanity has never built an infrastructure for peace. A global structure where every individual can participate, where every gesture counts, and where every act of peace tangibly strengthens the world.</p>
+
+            <p data-i18n="manifesto.p7"><strong>NAVA PEACE is that first structure.</strong></p>
+            <ul class="manifesto-list">
+              <li data-i18n="manifesto.li3">A global network of consciousness.</li>
+              <li data-i18n="manifesto.li4">An economy of kindness.</li>
+              <li data-i18n="manifesto.li5">A planetary ritual of compassion and unity.</li>
+            </ul>
+
+            <p>&#x1F54A;</p>
+
+            <blockquote class="manifesto-quote" data-i18n="manifesto.quote2">"Peace is not a theory. It is a discipline."</blockquote>
+            <p data-i18n="manifesto.p8">It is cultivated like a muscle, practiced like an art. It demands presence, effort, and consistency.</p>
+
+            <p data-i18n="manifesto.p9">A daily gesture repeated by millions of people becomes a civilizational direction. A planetary habit. A movement that transcends borders, languages, religions, and identities. When we choose peace each morning, we train ourselves to be stronger than our fears, stronger than our wounds, more serene than our anger.</p>
+
+            <p>&#x1F54A;</p>
+
+            <p data-i18n="manifesto.p10">We become human beings capable of loving the world despite its shadows.</p>
+
+            <p data-i18n="manifesto.p11">This manifesto is for all</p>
+            <ul class="manifesto-list">
+              <li data-i18n="manifesto.li6">those who refuse to respond to violence with violence.</li>
+              <li data-i18n="manifesto.li7">For those who know that peace is not naive, but courageous.</li>
+              <li data-i18n="manifesto.li8">To those who understand that peace is not a weakness, but a strength.</li>
+              <li data-i18n="manifesto.li9">To those who see peace not as a dream, but as a daily endeavor.</li>
+              <li data-i18n="manifesto.li10">To those who, wounded, choose healing rather than passing on the pain.</li>
+              <li data-i18n="manifesto.li11">To those who have lost everything, but refuse to lose their humanity.</li>
+              <li data-i18n="manifesto.li12">To those who dream of a world where our children no longer have to choose between fear and freedom. &#x1F54A;</li>
+            </ul>
+
+            <p style="text-align:center;" data-i18n="manifesto.p12">I tell you:</p>
+            <p style="text-align:center;font-weight:700;font-size:1.1rem;" data-i18n="manifesto.p13">NAVA PEACE is our silent pledge.</p>
+
+            <p data-i18n="manifesto.p14" data-i18n-html>We cannot change the past. But we can create a future where peace is no longer the exception, but the norm.<br/>A future where the world rises each day, gesture by gesture, heart by heart, click by click. A future where peace is no longer a word, but a movement.</p>
+
+            <p style="text-align:center;" data-i18n="manifesto.p15">&#x1F4AB; <strong>We are the light-bearers of this century.</strong> &#x1F4AB;</p>
+
+            <ul class="manifesto-list">
+              <li data-i18n="manifesto.li13">We are those who refuse resignation.</li>
+              <li data-i18n="manifesto.li14">Those who choose unity.</li>
+              <li data-i18n="manifesto.li15">Those who want to build a world where human dignity is stronger than hatred.</li>
+              <li data-i18n="manifesto.li16">We are NAVA PEACE.</li>
+              <li data-i18n="manifesto.li17">We are humanity awakening.</li>
+              <li data-i18n="manifesto.li18">We are the dawn of a new world.</li>
+              <li data-i18n="manifesto.li19">And every day, with a simple gesture,</li>
+              <li data-i18n="manifesto.li20">we write together the most beautiful sentence in the history of humankind:</li>
+            </ul>
+
+            <blockquote class="manifesto-quote" data-i18n="manifesto.quote3" data-i18n-html>"Today, for me, for you,<br/>for us, I choose peace."</blockquote>
+            <p style="text-align:right;font-style:italic;color:rgba(255,255,255,0.7);">A.A. December 1, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ======== ABOUT THE FOUNDER ======== -->
   <section class="section-founder" id="founder">
     <div class="container">
       <h2 class="section-heading animate-on-scroll" data-i18n="founder.heading">ABOUT THE FOUNDER</h2>
 
+      <div class="founder-portrait animate-on-scroll">
+        <img src="assets/founder-portrait.png" alt="Alan August — Founder, NAVA PEACE" class="founder-photo" loading="lazy" onclick="document.getElementById('lightbox').style.display='flex'" />
+      </div>
+
       <div class="founder-grid animate-on-scroll">
         <div class="founder-card">
-          <p data-i18n="founder.p1">My name is Alan August. I am an entrepreneur, global citizen, life lover, and Witness of the World. Yet, amidst all these suffering, I asked to myself and to friends, how can we have peace, here ?</p>
-          <p data-i18n="founder.p2">NAVA PEACE is my my humble invitation to change the world.</p>
+          <p data-i18n="founder.p1">My name is Alan August, I am an entrepreneur, globetrotter, life lover and world citizen. Witnessing over the years all these suffering, I asked to myself and to my friends: How, in 2025, cannot we live in peace, how ?</p>
+          <p data-i18n="founder.p2">NAVA PEACE is my answer and my humble invitation, to change the world.</p>
         </div>
         <div class="founder-card">
-          <p data-i18n="founder.p3">"Guys, I am just a random dude, a hippy dropped from 100 years ago by accident. My chakra blaster charged with raw pho pho of suffering, all November Billy, I think it was the beginning of my deep reflection "was that what its all is, is there Beauty to it?"</p>
-          <p data-i18n="founder.p4">A few months later, I spent my life in a Buddhist temple in Chiang Mai, in northern Thailand. I went there to find myself, to untill the "rest of the world that had nothing left to offer me but chaos, routine and the same old same old A Westerner, at heart reinvent, in a journey forward, A way to invent a concept. A way to find peace, to invent, and to tell my again. One of those days, I met extraordinary little souls that came to me with clarity. What life could not continue like say...</p>
+          <p data-i18n="founder.p3">"Guys, I am just a random dude dropped here 50 years ago by accident. My dude Steeve shared with me his pain about the suffering of Palestinian kids, I think it was the beginning of my deep reflection "and me what do I do, how can I help?".</p>
+          <p data-i18n="founder.p4">A few months later, I spent 25 days in a Buddhist temple in Chiang Mai, in northern Thailand. I went there to find myself, to reconnect with the "me" that had been lost over the years, buried under the noise and chaos of life. A Vipassana, a silent retreat, is a journey inward. A way to return to oneself. A way to find peace, to reset, and to shine again. One of those days, I received this vision, an inspiration that came to me with clarity. We cannot continue this way...</p>
           <p style="text-align:center;font-weight:700;" data-i18n="founder.motto">PEACE IS THE ONLY WAY.</p>
-          <p data-i18n="founder.p5">That belief belief transformer from a world into a whisper.</p>
-          <p data-i18n="founder.p6">Each PEACE App each tap is a whisper of peace. In billions of whispers becomes a work that cannot be ignored.</p>
-          <p style="text-align:right;font-style:italic;" data-i18n="founder.signature" data-i18n-html>Alan August<br/>Founder, NAVAPEACE</p>
+          <p data-i18n="founder.p5">There is not better investment than a world at peace.</p>
+          <p data-i18n="founder.p6">With NAVA PEACE App each tap is a whisper of peace in becoming. Millions of whispers become a voice the world cannot ignore.</p>
+          <p style="text-align:right;font-style:italic;" data-i18n="founder.signature" data-i18n-html>Alan August<br/>Founder, NAVA PEACE</p>
         </div>
+      </div>
+      <div class="cta-wrapper animate-on-scroll">
+        <a href="https://t.me/NavaPeaceBot/app" target="_blank" rel="noopener" class="cta-download" data-i18n="cta.download">
+          <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+          JOIN NAVA PEACE
+        </a>
       </div>
     </div>
   </section>
@@ -943,13 +1023,47 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p data-i18n="footer.copyright">&copy; 2025 NAVA PEACE — All Rights Reserved</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/navapeace" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/navapeace" target="_blank" rel="noopener" aria-label="X / Twitter" class="footer-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://t.me/navapeace" target="_blank" rel="noopener" aria-label="Telegram" class="footer-social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+        </div>
+        <p data-i18n="footer.copyright">&copy; 2026 NAVA PEACE — All Rights Reserved</p>
         <p data-i18n="footer.tagline">Built with love, courage and a deep belief that peace begins within.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Lightbox -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;cursor:pointer;" onclick="this.style.display='none'">
+    <img src="assets/founder-portrait.png" alt="Alan August" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 0 60px rgba(255,255,255,0.2);" />
+  </div>
+
+  <!-- Back to top button -->
+  <button id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#x2191;</button>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    function showTokenInfo(key) {
+      var text = (typeof I18N !== 'undefined') ? I18N.t(key) : '';
+      if (!text) return;
+      document.getElementById('tdi-text').textContent = text;
+      var ov = document.getElementById('tdi-overlay');
+      ov.style.display = 'flex';
+    }
+    function closeTDI() {
+      document.getElementById('tdi-overlay').style.display = 'none';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeTDI();
+    });
+  </script>
 </body>
 </html>
